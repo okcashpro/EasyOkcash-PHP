@@ -39,7 +39,7 @@ $okcash = new Okcash('username','password');
 $okcash = new Okcash('username','password','host','port');
 // Defaults are:
 //	host = localhost
-//	port = 8332
+//	port = 6969
 //	proto = http
 
 // If you wish to make an SSL connection you can set an optional CA certificate or leave blank
@@ -90,7 +90,7 @@ class Okcash {
      * @param string $proto
      * @param string $url
      */
-    function __construct($username, $password, $host = 'localhost', $port = 8332, $url = null) {
+    function __construct($username, $password, $host = 'localhost', $port = 6969, $url = null) {
         $this->username      = $username;
         $this->password      = $password;
         $this->host          = $host;
