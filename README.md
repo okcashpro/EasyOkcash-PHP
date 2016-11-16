@@ -1,20 +1,20 @@
 EasyOkcash-PHP
 ===============
 
-A simple class for making calls to Bitcoin's API using PHP.
+A simple class for making calls to Okcash's API using PHP.
 
 Getting Started
 ---------------
 1. Include easyokcash.php into your PHP script:
 
 	`require_once('easyokcash.php');`
-2. Initialize Bitcoin connection/object:
+2. Initialize Okcash connection/object:
 
-	`$okcash = new Bitcoin('username','password');`
+	`$okcash = new Okcash('username','password');`
 
 	Optionally, you can specify a host, port. Default is HTTP on localhost port 8332.
 
-	`$okcash = new Bitcoin('username','password','localhost','8332');`
+	`$okcash = new Okcash('username','password','localhost','8332');`
 
 	If you wish to make an SSL connection you can set an optional CA certificate or leave blank
 	`$okcash->setSSL('/full/path/to/mycertificate.cert');`
