@@ -12,9 +12,9 @@ Getting Started
 
 	`$okcash = new Okcash('username','password');`
 
-	Optionally, you can specify a host, port. Default is HTTP on localhost port 8332.
+	Optionally, you can specify a host, port. Default is HTTP on localhost port 6969.
 
-	`$okcash = new Okcash('username','password','localhost','8332');`
+	`$okcash = new Okcash('username','password','localhost','6969');`
 
 	If you wish to make an SSL connection you can set an optional CA certificate or leave blank
 	`$okcash->setSSL('/full/path/to/mycertificate.cert');`
