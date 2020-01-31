@@ -122,6 +122,12 @@ class Okcash {
         // The ID should be unique for each call
         $this->id++;
 
+        // Set precision of float serialization for json encoding
+        if (version_compare(phpversion(), '7.1', '>=')) {
+          ini_set( 'precision'          , 8 );
+          ini_set( 'serialize_precision', 8 );
+        }
+
         // Build the request, it's ok that params might have any empty array
         $request = json_encode(array(
             'method' => $method,
